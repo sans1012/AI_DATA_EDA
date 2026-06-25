@@ -1,0 +1,42 @@
+2026-06-25 22:45:08,237 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-25 22:45:08,725 | INFO | utils.helpers | Memory Reduced : 8.52 MB -> 8.47 MB
+2026-06-25 22:48:07,480 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-25 22:48:07,587 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-25 22:48:07,686 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-25 22:54:02,648 | INFO | utils.helpers | Loading dataset : data/superstore.csv
+2026-06-25 22:54:23,441 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-25 22:54:23,543 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-25 22:54:23,649 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-25 22:54:23,658 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-25 23:44:22,963 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-25 23:44:23,378 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-25 23:44:23,868 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-25 23:44:23,869 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-25 23:45:06,430 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-25 23:45:06,536 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-25 23:45:06,599 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-25 23:45:06,599 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-26 00:30:02,692 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 00:30:02,947 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 00:30:03,273 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 00:30:37,283 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 00:30:37,373 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 00:30:37,427 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 00:30:51,212 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 00:30:51,304 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 00:30:51,343 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 00:30:51,343 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-26 00:31:01,173 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 00:31:01,269 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 00:31:01,326 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 00:31:01,326 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-26 00:46:26,936 | INFO | utils.helpers | Loading dataset : data/superstore.csv
+2026-06-26 00:46:40,144 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 00:46:40,534 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 00:46:40,722 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 00:46:40,723 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-26 00:50:20,561 | INFO | utils.helpers | Loading dataset : data/superstore.csv
+2026-06-26 00:50:45,911 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 00:50:45,986 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 00:50:46,079 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 00:50:46,080 | INFO | analyzer.categorical | Running Categorical Analysis
