@@ -40,3 +40,117 @@
 2026-06-26 00:50:45,986 | INFO | agents.profiler_agent | Starting dataset profiling...
 2026-06-26 00:50:46,079 | INFO | agents.profiler_agent | Profiling Complete
 2026-06-26 00:50:46,080 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-26 12:07:21,727 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 12:07:22,108 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:07:22,318 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:07:22,318 | INFO | analyzer.correlation | Running correlation analysis
+2026-06-26 12:08:19,506 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:08:19,556 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:08:19,573 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:08:19,573 | INFO | analyzer.correlation | Running correlation analysis
+2026-06-26 12:08:39,543 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 12:08:39,614 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:08:39,629 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:08:39,630 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-26 12:08:52,379 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:08:52,423 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:08:52,440 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:08:52,441 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-26 12:09:32,749 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:09:32,790 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:09:32,804 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:09:32,804 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-26 12:11:20,079 | INFO | utils.helpers | Loading dataset : data/SampleSuperstore.csv
+2026-06-26 12:11:20,160 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:11:20,223 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:11:20,223 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-26 12:11:30,883 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:11:30,922 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:11:30,937 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:11:30,937 | INFO | analyzer.correlation | Running correlation analysis
+2026-06-26 12:11:40,849 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:11:40,892 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:11:40,908 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:11:40,908 | INFO | analyzer.correlation | Running correlation analysis
+2026-06-26 12:12:42,411 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:12:42,448 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:12:42,463 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:12:42,463 | INFO | analyzer.correlation | Running correlation analysis
+2026-06-26 12:13:06,899 | INFO | utils.helpers | Loading dataset : data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-26 12:13:06,943 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:13:06,961 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:13:06,962 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-26 12:14:08,642 | INFO | utils.helpers | Loading dataset : data/SampleSuperstore.csv
+2026-06-26 12:14:08,673 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:14:08,687 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:14:08,687 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-26 12:15:27,313 | INFO | utils.helpers | Loading dataset : data/SampleSuperstore.csv
+2026-06-26 12:15:27,359 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 12:15:27,385 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 12:15:27,385 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-26 12:20:02,130 | INFO | utils.helpers | Loading dataset : data/Listings.csv
+2026-06-26 12:20:09,423 | INFO | utils.helpers | Loading dataset : data/Listings.csv
+2026-06-26 17:05:49,785 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 17:05:49,986 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 17:05:50,101 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 17:05:50,101 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-26 17:06:14,278 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 17:06:14,288 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 17:06:14,299 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 17:06:14,299 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-26 17:26:22,644 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 17:26:22,878 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 17:26:22,998 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 17:26:22,999 | INFO | analyzer.relationships | running relationship analysis
+2026-06-26 17:27:15,033 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 17:27:15,045 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 17:27:15,052 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 17:27:15,052 | INFO | analyzer.relationships | running relationship analysis
+2026-06-26 17:27:56,136 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 17:27:56,148 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 17:27:56,162 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 17:27:56,163 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-26 20:26:37,882 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:26:38,065 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:27:09,380 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:27:09,399 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:27:25,789 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:27:25,800 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:28:26,142 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:28:26,172 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:28:26,257 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:46:13,218 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:46:13,312 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:46:13,379 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:46:13,379 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:47:00,125 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:47:00,150 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:47:00,181 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:47:00,181 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:47:00,184 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
+2026-06-26 20:47:43,888 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:47:43,898 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:47:43,920 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:47:43,921 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:47:43,922 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
+2026-06-26 20:47:57,491 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:47:57,519 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:47:57,552 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:47:57,553 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:47:57,553 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
+2026-06-26 20:48:44,725 | INFO | utils.helpers | Loading dataset : data/winequality-red.csv
+2026-06-26 20:48:44,831 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:48:44,848 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:48:44,849 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:48:44,850 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
+2026-06-26 20:50:05,785 | INFO | utils.helpers | Loading dataset : data/metflix_titles.csv
+2026-06-26 20:50:15,245 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 20:50:15,531 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:50:15,812 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 20:50:15,813 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:50:15,813 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
+2026-06-26 20:50:35,380 | INFO | utils.helpers | Loading dataset : data/SampleSuperstore.csv
+2026-06-26 20:50:35,533 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 20:50:35,579 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-26 20:50:35,580 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
+2026-06-26 20:50:35,580 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
