@@ -98,12 +98,23 @@ if uploaded_file:
     with col1:
         st.subheader("📈 Business Metrics")
         metrics = planner.get("metrics", [])
+
         if metrics:
             for metric in metrics:
-                st.success(metric)
+
+                if isinstance(metric, dict):
+
+                    st.markdown(
+                        f"**{metric['name']}**  \n"
+                        f"{metric.get('description', '')}"
+                    )
+
+                else:
+
+                    st.markdown(f"- {metric}")
 
         else:
-            st.info("No metrics detected.")
+            st.info("No business metrics detected.")
 
     with col2:
         st.subheader("📂 Dimensions")
