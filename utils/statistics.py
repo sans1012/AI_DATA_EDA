@@ -44,3 +44,42 @@ class StatisticalTests:
                     "contingency": contingency}
         except Exception as e:
             return None
+
+    @staticmethod
+    def cramers_v(df, col1, col2):
+        try:
+            contingency = pd.crosstab(df[col1], df[col2])
+            chi2 = chi2_contingency(contingency)[0]
+            n = contingency.sum().sum()
+            r, k = contingency.shape
+            phi2 = chi2/n
+            phi2corr = max(0, phi2 - ((k-1) * (r-1))/(n-1))
+            rcorr = r-((r-1) **2)/(n-1)
+            kcorr = k-((k-1)**2)/(n-1)
+            value = np.sqrt(phi2corr/max(1, min((kcorr-1),(rcorr-1) )))
+            return float(value)
+        except Exception:
+            return None
+        
+    @staticmethod
+    def strength(value):
+
+        value = abs(value)
+
+        if value >= 0.9:
+
+            return "Very Strong"
+
+        elif value >= 0.7:
+
+            return "Strong"
+
+        elif value >= 0.5:
+
+            return "Moderate"
+
+        elif value >= 0.3:
+
+            return "Weak"
+
+        return "Negligible"

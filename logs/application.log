@@ -439,3 +439,168 @@
 2026-06-27 17:44:12,607 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
 2026-06-27 17:44:12,607 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
 2026-06-27 17:44:12,608 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 17:36:08,545 | INFO | agents.report_agent | Generating Complete Report
+2026-06-28 17:36:08,569 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-28 17:36:08,908 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-28 17:36:08,908 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-28 17:36:08,940 | INFO | profiling.column_profiler | 10 columns profiled
+2026-06-28 17:36:08,941 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-28 17:36:08,941 | ERROR | agents.planner_agent | type object 'PromptBuilder' has no attribute 'planner_prompt'
+2026-06-28 17:36:08,941 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-28 17:36:08,942 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-28 17:36:08,942 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-28 17:36:09,121 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-28 17:36:09,151 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-28 17:36:09,153 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-28 17:36:09,177 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-28 17:36:09,181 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-28 17:36:09,183 | INFO | agents.report_agent | Collected 14 evidence objects.
+2026-06-28 17:36:09,183 | INFO | agents.insights_agent | Generating AI Insights...
+2026-06-28 17:58:49,982 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 17:58:49,993 | INFO | agents.insights_agent | AI Insights Generated Successfully.
+2026-06-28 17:58:49,996 | INFO | agents.report_agent | AI Insights Generated
+2026-06-28 17:58:49,997 | INFO | agents.report_agent | Report Generated successfully
+2026-06-28 17:58:51,886 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 17:58:51,887 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 17:58:51,887 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 18:14:36,712 | INFO | agents.report_agent | Generating Complete Report
+2026-06-28 18:14:36,712 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-28 18:14:37,132 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-28 18:14:37,132 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-28 18:14:37,177 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-28 18:14:37,177 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-28 18:14:37,177 | ERROR | agents.planner_agent | type object 'PromptBuilder' has no attribute 'planner_prompt'
+2026-06-28 18:14:37,178 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-28 18:14:37,178 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-28 18:14:37,178 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-28 18:14:37,293 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-28 18:14:37,322 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-28 18:14:37,322 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-28 18:14:37,348 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-28 18:14:37,357 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-28 18:14:37,362 | INFO | agents.report_agent | Collected 12 evidence objects.
+2026-06-28 18:14:37,362 | INFO | agents.insights_agent | Generating AI Insights...
+2026-06-28 18:31:22,176 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 18:31:22,193 | INFO | agents.insights_agent | AI Insights Generated Successfully.
+2026-06-28 18:31:22,202 | INFO | agents.report_agent | AI Insights Generated
+2026-06-28 18:31:22,202 | INFO | agents.report_agent | Report Generated successfully
+2026-06-28 18:31:23,357 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 18:31:23,358 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 18:31:23,358 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 18:31:23,358 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 18:31:23,358 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:04:01,613 | INFO | agents.report_agent | Generating Complete Report
+2026-06-28 19:04:01,614 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-28 19:04:01,950 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-28 19:04:01,950 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-28 19:04:01,997 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-28 19:04:01,998 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-28 19:04:01,999 | ERROR | agents.planner_agent | 'DatasetProfile' object has no attribute 'total_missing'
+2026-06-28 19:04:01,999 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-28 19:04:02,000 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-28 19:04:02,000 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-28 19:04:02,136 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-28 19:04:02,182 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-28 19:04:02,183 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-28 19:04:02,238 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-28 19:04:02,247 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-28 19:04:02,252 | INFO | agents.report_agent | Collected 11 evidence objects.
+2026-06-28 19:04:02,253 | INFO | agents.insights_agent | Generating AI Insights...
+2026-06-28 19:25:54,699 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 19:25:54,703 | INFO | agents.insights_agent | AI Insights Generated Successfully.
+2026-06-28 19:25:54,705 | INFO | agents.report_agent | AI Insights Generated
+2026-06-28 19:25:54,706 | INFO | agents.report_agent | Report Generated successfully
+2026-06-28 19:25:54,713 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,191 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,192 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,244 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,245 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,245 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,245 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,246 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 19:25:56,246 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:20:57,786 | INFO | agents.report_agent | Generating Complete Report
+2026-06-28 20:20:57,791 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-28 20:20:58,140 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-28 20:20:58,140 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-28 20:20:58,181 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-28 20:20:58,181 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-28 20:20:58,182 | ERROR | agents.planner_agent | 'DatasetProfile' object has no attribute 'total_missing'
+2026-06-28 20:20:58,182 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-28 20:20:58,182 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-28 20:20:58,183 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-28 20:20:58,321 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-28 20:20:58,367 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-28 20:20:58,368 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-28 20:20:58,415 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-28 20:20:58,447 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-28 20:20:58,455 | INFO | agents.report_agent | Collected 11 evidence objects.
+2026-06-28 20:20:58,458 | INFO | agents.insights_agent | Generating AI Insights...
+2026-06-28 20:47:27,235 | INFO | agents.report_agent | Generating Complete Report
+2026-06-28 20:47:27,361 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-28 20:47:28,474 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-28 20:47:28,479 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-28 20:47:28,626 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-28 20:47:28,632 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-28 20:47:28,651 | ERROR | agents.planner_agent | 'DatasetProfile' object has no attribute 'total_missing'
+2026-06-28 20:47:28,654 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-28 20:47:28,656 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-28 20:47:28,667 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-28 20:47:28,821 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-28 20:47:28,957 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-28 20:47:28,960 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-28 20:47:29,075 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-28 20:47:29,163 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-28 20:47:29,167 | INFO | agents.report_agent | Collected 11 evidence objects.
+2026-06-28 20:47:29,170 | INFO | agents.insights_agent | Generating AI Insights...
+2026-06-28 20:48:55,228 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 20:48:55,234 | INFO | agents.insights_agent | AI Insights Generated Successfully.
+2026-06-28 20:48:55,235 | INFO | agents.report_agent | AI Insights Generated
+2026-06-28 20:48:55,236 | INFO | agents.report_agent | Report Generated successfully
+2026-06-28 20:48:55,270 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,112 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,112 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,219 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,219 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,220 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,222 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,225 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:48:56,226 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 20:54:48,809 | INFO | agents.report_agent | Generating Complete Report
+2026-06-28 20:54:48,810 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-28 20:54:49,179 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-28 20:54:49,179 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-28 20:54:49,203 | INFO | profiling.column_profiler | 7 columns profiled
+2026-06-28 20:54:49,203 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-28 21:11:08,239 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 21:11:08,240 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-28 21:11:08,240 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-28 21:11:08,240 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-28 21:11:08,439 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-28 21:11:08,519 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-28 21:11:08,519 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-28 21:11:08,606 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-28 21:11:08,664 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-28 21:11:08,666 | INFO | agents.report_agent | Collected 5 evidence objects.
+2026-06-28 21:11:08,666 | INFO | agents.insights_agent | Generating AI Insights...
+2026-06-28 21:24:40,359 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 21:24:40,435 | INFO | agents.insights_agent | AI Insights Generated Successfully.
+2026-06-28 21:24:40,442 | INFO | agents.report_agent | AI Insights Generated
+2026-06-28 21:24:40,445 | INFO | agents.report_agent | Report Generated successfully
+2026-06-28 21:24:40,669 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,727 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,728 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,790 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,791 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,791 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,791 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,792 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:24:41,792 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:27:12,365 | INFO | llm.ollama_client | LLM response generated
+2026-06-28 21:27:12,382 | INFO | agents.insights_agent | AI Insights Generated Successfully.
+2026-06-28 21:27:12,387 | INFO | agents.report_agent | AI Insights Generated
+2026-06-28 21:27:12,388 | INFO | agents.report_agent | Report Generated successfully
+2026-06-28 21:27:14,518 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:27:14,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:27:14,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-28 21:27:14,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'

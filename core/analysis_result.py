@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from typing import Any
+from core.evidence import Evidence
 
 @dataclass
 class AnalysisResult:
@@ -10,5 +11,5 @@ class AnalysisResult:
     charts: list[dict] = field(default_factory= list)
     findings: list[str] = field(default_factory= list)
     recommendations: list[str] = field(default_factory= list)
-
-    
+    evidence: list[Evidence] = field(default_factory= list)
+        

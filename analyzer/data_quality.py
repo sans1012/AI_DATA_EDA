@@ -1,6 +1,6 @@
 from core.base_analyzer import BaseAnalyzer
 from core.analysis_result import AnalysisResult
-
+from core.evidence import Evidence
 from utils.logger import get_logger
 
 log = get_logger(__name__)
@@ -13,26 +13,19 @@ class DataQualityAnalyzer(BaseAnalyzer):
         findings = []
         recommendations = []
         quality_table = []
+        evidence = []
 
         missing = df.isnull().sum()
-
-        missing_percent = (
-            df.isnull().mean() * 100
-        ).round(2)
+        missing_percent = ( df.isnull().mean() * 100 ).round(2)
 
         for col in df.columns:
-
             if missing[col] == 0:
                 continue
-
             percent = float(missing_percent[col])
-
             if percent >= 50:
                 severity = "High"
 
-                recommendations.append(
-                    f"{col}: Consider dropping or investigating the source."
-                )
+                recommendations.append(f"{col}: Consider dropping or investigating the source.")
 
             elif percent >= 20:
                 severity = "Medium"
@@ -44,137 +37,121 @@ class DataQualityAnalyzer(BaseAnalyzer):
             else:
                 severity = "Low"
 
-            findings.append(
-                f"{col} contains {percent:.2f}% missing values ({severity})."
-            )
-
+            findings.append(f"{col} contains {percent:.2f}% missing values ({severity}).")
             quality_table.append({
-
                 "Issue": "Missing Values",
-
                 "Column": col,
-
                 "Value": f"{percent:.2f}%",
-
                 "Severity": severity
-
             })
-
+            
+            evidence.append(
+                Evidence(
+                    evidence_type="missing_values",
+                    feature=col,
+                    value=percent,
+                    severity=severity.lower(),
+                    description=f"{percent:.2f}% missing values"
+                )
+            )
         duplicates = int(df.duplicated().sum())
-
         if duplicates > 0:
-
-            findings.append(
-                f"{duplicates} duplicate rows detected."
-            )
-
-            recommendations.append(
-                "Remove duplicate rows before analysis."
-            )
-
+            findings.append( f"{duplicates} duplicate rows detected.")
+            recommendations.append("Remove duplicate rows before analysis.")
             quality_table.append({
-
                 "Issue": "Duplicate Rows",
-
                 "Column": "-",
-
                 "Value": duplicates,
-
                 "Severity": "Medium"
-
             })
+
+            evidence.append(
+                Evidence(
+                    evidence_type="duplicate_rows",
+                    feature="dataset",
+                    value=duplicates,
+                    severity="medium",
+                    description=f"{duplicates} duplicate rows detected"
+                )
+            )
 
         for col in df.columns:
-
             unique = df[col].nunique(dropna=False)
-
             if unique == 1:
-
-                findings.append(
-                    f"{col} has only one unique value."
-                )
-
-                recommendations.append(
-                    f"Remove constant column '{col}'."
-                )
-
+                findings.append( f"{col} has only one unique value.")
+                recommendations.append( f"Remove constant column '{col}'.")
                 quality_table.append({
-
                     "Issue": "Constant Column",
-
                     "Column": col,
-
                     "Value": 1,
-
                     "Severity": "High"
-
                 })
+                evidence.append(
+                    Evidence(
+                        evidence_type="constant_column",
+                        feature=col,
+                        value=1,
+                        severity="high",
+                        description="Constant feature"
+                    )
+                )
 
 
         for col in profile.categorical_columns:
-
             unique = df[col].nunique()
-
             ratio = unique / len(df)
-
-            if ratio > 0.5:
-
+            if ratio > 0.85:
                 findings.append(
                     f"{col} has high cardinality ({unique} unique values)."
                 )
-
-                recommendations.append(
-                    f"Consider encoding or removing '{col}' depending on use case."
-                )
-
+                recommendations.append( f"{col}: High-cardinality categorical feature. Consider frequency encoding, target encoding, embeddings or Top-N grouping instead of removing.")
                 quality_table.append({
-
                     "Issue": "High Cardinality",
-
                     "Column": col,
-
                     "Value": unique,
-
                     "Severity": "Medium"
-
                 })
-
+                evidence.append(
+                    Evidence(
+                        evidence_type="high_cardinality",
+                        feature=col,
+                        value=unique,
+                        severity="medium",
+                        description=f"{unique} unique categories"
+                    )
+                )
 
         for col in profile.categorical_columns:
-
             empty = (df[col] == "").sum()
-
             if empty > 0:
-
-                findings.append(
-                    f"{col} contains {empty} empty strings."
-                )
-
-                recommendations.append(
-                    f"Replace empty strings in '{col}' with NaN."
-                )
-
+                findings.append( f"{col} contains {empty} empty strings.")
+                recommendations.append(f"Replace empty strings in '{col}' with NaN.")
                 quality_table.append({
-
                     "Issue": "Empty Strings",
-
                     "Column": col,
-
                     "Value": empty,
-
                     "Severity": "Low"
-
                 })
+                evidence.append(
+                    Evidence(
+                        evidence_type="empty_strings",
+                        feature=col,
+                        value=empty,
+                        severity="low",
+                        description=f"{empty} empty strings"
+                    )
+                )
 
         if len(findings) == 0:
             findings.append(
                 "No major data quality issues detected.")
 
-        return AnalysisResult(
-            id="data_quality",
-            title="Data Quality",
-            summary="Assessment of dataset quality.",
-            tables=quality_table,
-            charts=[],
-            findings=findings,
-            recommendations=recommendations        )
+        return AnalysisResult(  id="data_quality",
+                                title="Data Quality",
+                                summary="Assessment of dataset quality.",
+                                tables=quality_table,
+                                charts=[],
+                                findings=findings,
+                                recommendations=recommendations,
+                                evidence=evidence
+                            )

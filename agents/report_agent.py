@@ -1,12 +1,16 @@
 from agents.planner_agent import PlannerAgent
 from agents.profiler_agent import ProfilerAgent
+from agents.insights_agent import InsightAgent
+
 from profiling.column_profiler import ColumnProfiler
+
 from analyzer.overview import OverviewAnalyzer
 from analyzer.data_quality import DataQualityAnalyzer
 from analyzer.numerical import NumericalAnalyzer
 from analyzer.categorical import CategoricalAnalyzer
 from analyzer.correlation import CorrelationAnalyzer
 from analyzer.relationships import RelationshipAnalyzer
+
 from utils.logger import get_logger
 log =get_logger(__name__)
 
@@ -15,6 +19,7 @@ class ReportAgent:
         self.profiler  = ProfilerAgent()
         self.column_profiler = ColumnProfiler()
         self.planner = PlannerAgent()
+
         self.overview = OverviewAnalyzer()
         self.quality = DataQualityAnalyzer()
         self.numerical = NumericalAnalyzer()
@@ -22,11 +27,23 @@ class ReportAgent:
         self.correlation = CorrelationAnalyzer()
         self.relationships = RelationshipAnalyzer()
 
+        self.insight = InsightAgent()
+
+    def _collect_evidence(self, report):
+        evidence = []
+        for key, value in report.items():
+            if hasattr(value, 'evidence'):
+                evidence.extend(value.evidence)
+        return evidence
+
+
     def generate_report(self, df):
         log.info("Generating Complete Report")
         dataset_profile = self.profiler.profile(df)
         column_profiles = self.column_profiler.profile(df)
+
         planner_output = self.planner.plan(dataset_profile, column_profiles)
+
         overview = self.overview.analyze(df, dataset_profile)
         quality = self.quality.analyze(df, dataset_profile)
         numerical = self.numerical.analyze(df, dataset_profile)
@@ -46,5 +63,23 @@ class ReportAgent:
             "correlation" : correlation,
             "relationships" : relationships
         }
-        log.info("Report Generated Successfully")
+        report['evidence'] = self._collect_evidence(report)
+        log.info("Collected %d evidence objects.", len(report['evidence']))
+
+        try:
+            report['ai_insights'] = self.insight.generate(report)
+            log.info("AI Insights Generated")
+        
+        except Exception as e:
+            log.warning("Insight Agent failed: %s", str(e))
+            report['ai_insights'] = {"executive_summary": "Unable to generate AI Insights",
+                                     "key_findings" : [],
+                                     "business_recommendations" : [],
+                                     "data_quality_risks": [],
+                                     "ml_readiness":"",
+                                     "feature_engineering": [],
+                                     "next_steps" : []
+                                     }
+            
+        log.info("Report Generated successfully")
         return report

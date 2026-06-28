@@ -68,7 +68,7 @@ if uploaded_file:
 
     st.divider()
 
-    st.header("🧠 AI Understanding")
+    st.header("🧠 Data Understanding")
     c1, c2 = st.columns(2)
     with c1:
         st.metric(
@@ -173,6 +173,30 @@ if uploaded_file:
                         fig,
                         use_container_width=True
                     )
+
+    st.header("🧠 AI Executive Summary")
+    ai = report['ai_insights']
+    st.write(ai['executive_summary'])
+    st.subheader("Key Findings")
+
+    for item in ai["key_findings"]:
+        st.markdown(f" - {item}")
+
+    st.subheader("Business Recommendations")
+    for item in ai['business_recommendations']:
+        st.markdown(f" - {item}")
+    
+    st.subheader("ML Readiness")
+    st.info(ai['ml_readiness'])
+
+    st.subheader("Feature Engineering")
+    for item in ai['feature_engineering']:
+        st.markdown(f" - {item}")
+
+    st.subheader("Next Steps")
+    for item in ai['next_steps']:
+        st.markdown(f" - {item}")
+
 
     with tabs[6]:
 
