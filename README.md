@@ -254,7 +254,7 @@ http://localhost:8501
 
 ---
 
-# Current Capabilities
+# Supported Analysis.
 
 * Automatic profiling
 * Missing value detection
