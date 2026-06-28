@@ -154,3 +154,288 @@
 2026-06-26 20:50:35,579 | INFO | profiling.column_profiler | 13 columns profiled
 2026-06-26 20:50:35,580 | INFO | profiling.semantic_reasoner | Running Semantic Reasoner
 2026-06-26 20:50:35,580 | INFO | profiling.semantic_reasoner | Semantic Reasoning Complete.
+2026-06-26 22:59:53,772 | ERROR | llm.parser | Unable to parse JSON from LLM Respose
+2026-06-26 23:00:27,268 | ERROR | llm.parser | Unable to parse JSON from LLM response.
+2026-06-26 23:03:28,254 | ERROR | llm.parser | JSON Decode Error: Expecting value: line 2 column 15 (char 42)
+2026-06-26 23:03:28,258 | ERROR | llm.parser | {"dataset_type" : "Retail",
+ "metrics" : ['Sales;, 'Profit']
+}
+2026-06-26 23:03:36,165 | ERROR | llm.parser | JSON Decode Error: Expecting value: line 2 column 15 (char 42)
+2026-06-26 23:03:36,166 | ERROR | llm.parser | {"dataset_type" : "Retail",
+ "metrics" : ['Sales;, 'Profit']
+}
+2026-06-26 23:20:31,475 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 23:20:32,013 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 23:20:32,241 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 23:20:32,242 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 23:20:32,296 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 23:20:32,296 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-26 23:20:34,330 | ERROR | llm.ollama_client | Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-06-26 23:20:34,330 | ERROR | agents.planner_agent | Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-06-26 23:20:34,331 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-26 23:21:27,208 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-26 23:21:27,410 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-26 23:21:27,482 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-26 23:21:27,482 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-26 23:21:27,534 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-26 23:21:27,534 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-26 23:21:33,982 | ERROR | llm.ollama_client | llama runner process has terminated: error loading model: unable to allocate CPU buffer (status code: 500)
+2026-06-26 23:21:33,983 | ERROR | agents.planner_agent | llama runner process has terminated: error loading model: unable to allocate CPU buffer (status code: 500)
+2026-06-26 23:21:33,983 | WARNING | agents.planner_agent | Using fallback execution plan
+2026-06-27 10:51:11,810 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 10:56:51,614 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 10:56:52,235 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 10:56:52,470 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 10:56:52,470 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 10:56:52,532 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 10:56:52,532 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 10:57:25,798 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 11:10:58,844 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 11:10:59,303 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 11:10:59,503 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 11:10:59,503 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 11:10:59,546 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 11:10:59,546 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 11:11:08,484 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 11:25:46,921 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 11:25:46,947 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 11:34:21,265 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 11:34:21,706 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 11:34:21,992 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 11:34:21,992 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 11:34:22,035 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 11:34:22,035 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 11:34:58,657 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 11:44:10,724 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 11:44:10,737 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 12:06:11,355 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 12:06:11,821 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 12:06:12,147 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 12:06:12,148 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 12:06:12,195 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 12:06:12,195 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 12:09:47,359 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 12:09:47,364 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 12:16:32,909 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 12:16:33,040 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 12:16:33,066 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 12:16:33,066 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 12:16:33,102 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 12:16:33,102 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 12:18:57,403 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 12:18:57,406 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 12:39:19,358 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 12:39:19,841 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 12:39:19,842 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 12:39:20,099 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 12:39:20,100 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 12:39:20,146 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 12:39:20,147 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 12:42:35,056 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 12:42:35,069 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 12:42:35,070 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 12:42:35,070 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 12:42:35,334 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 12:42:35,381 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 12:42:35,526 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 12:42:35,526 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 12:43:37,030 | INFO | utils.helpers | Loading dataset : data/netflix_titles.csv
+2026-06-27 12:43:37,356 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 12:43:37,356 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 12:43:37,606 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 12:43:37,606 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 12:43:37,640 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 12:43:37,641 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 12:46:11,709 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 12:46:11,710 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 12:46:11,712 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 12:46:11,712 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 12:46:12,210 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 12:46:12,219 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 12:46:12,282 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 12:46:12,282 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 12:46:12,283 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 13:41:07,503 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 13:41:07,512 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 13:41:07,737 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 13:41:07,737 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 13:41:07,765 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 13:41:07,766 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 13:44:17,774 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 13:44:17,776 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 13:44:17,776 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 13:44:17,779 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 13:44:17,816 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 13:44:17,879 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 13:44:17,879 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 13:44:17,965 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 13:44:17,969 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 13:44:20,867 | WARNING | agents.visualization_agent | Unable to render chart: imshow() got an unexpected keyword argument 'ttile'. Did you mean 'title'?
+2026-06-27 13:44:51,933 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 13:44:51,933 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 13:44:52,268 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 13:44:52,268 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 13:44:52,355 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-27 13:44:52,355 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 13:48:51,040 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 13:48:51,043 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 13:48:51,043 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 13:48:51,097 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 13:48:51,849 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 13:48:51,880 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 13:48:51,947 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 13:48:51,954 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 13:48:51,957 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 13:48:52,204 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 13:48:52,205 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 13:48:52,205 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 13:48:52,205 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 13:48:52,206 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 13:48:52,206 | WARNING | agents.visualization_agent | Unable to render chart: imshow() got an unexpected keyword argument 'ttile'. Did you mean 'title'?
+2026-06-27 14:32:43,658 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 14:32:43,665 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 14:32:43,999 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 14:32:44,000 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 14:32:44,062 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-27 14:32:44,062 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 14:36:13,278 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 14:36:13,279 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 14:36:13,280 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 14:36:13,280 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 14:36:13,535 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 14:36:13,622 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 14:36:13,684 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 14:36:13,746 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 14:36:13,752 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 14:36:14,434 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:36:14,435 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:36:14,435 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:36:14,435 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:36:14,436 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:37:32,147 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 14:37:32,148 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 14:37:32,187 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 14:37:32,187 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 14:37:32,250 | INFO | profiling.column_profiler | 21 columns profiled
+2026-06-27 14:37:32,251 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 14:42:52,172 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 14:42:52,172 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 14:42:52,175 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 14:42:52,176 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 14:42:52,233 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 14:42:52,248 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 14:42:52,310 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 14:42:52,313 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 14:42:52,316 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 14:42:52,516 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,517 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,517 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,517 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,518 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,518 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,518 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,519 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,520 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,520 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,520 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,520 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:42:52,520 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 14:50:36,398 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 14:50:36,398 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 14:50:36,545 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 14:50:36,545 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 14:50:36,603 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 14:50:36,603 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 14:52:33,096 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 14:52:33,096 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 14:52:33,097 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 14:52:33,097 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 14:52:33,363 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 14:52:33,422 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 14:52:33,605 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 14:52:33,605 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 14:52:33,606 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 14:52:33,662 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 16:23:11,259 | INFO | utils.helpers | Loading dataset : data/SampleSuperstore.csv
+2026-06-27 16:23:11,631 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 16:23:12,014 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 16:23:12,014 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 16:23:12,048 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-27 16:24:53,491 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 16:24:53,497 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 16:24:53,731 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 16:24:53,732 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 16:24:53,782 | INFO | profiling.column_profiler | 13 columns profiled
+2026-06-27 16:24:53,782 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 16:46:10,939 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 16:46:10,993 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 16:46:11,009 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 16:46:11,032 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 16:46:12,111 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 16:46:12,193 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-27 16:46:12,194 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 16:46:12,259 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 16:46:12,273 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 16:46:12,280 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 16:46:13,554 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 16:46:13,555 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 16:46:13,555 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 16:46:13,556 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 16:46:13,556 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 17:24:59,564 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 17:24:59,606 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 17:24:59,738 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 17:24:59,739 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 17:24:59,784 | INFO | profiling.column_profiler | 12 columns profiled
+2026-06-27 17:24:59,784 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 17:26:54,957 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 17:26:54,959 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 17:26:54,959 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 17:26:54,960 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 17:26:54,983 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 17:26:55,096 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-27 17:26:55,096 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 17:26:55,096 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 17:26:55,251 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 17:26:55,261 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 17:26:56,120 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 17:35:39,237 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 17:35:39,239 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 17:35:39,451 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 17:35:39,451 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 17:35:39,495 | INFO | profiling.column_profiler | 16 columns profiled
+2026-06-27 17:35:39,495 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 17:38:38,497 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 17:38:38,499 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 17:38:38,499 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 17:38:38,500 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 17:38:38,893 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 17:38:38,896 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-27 17:38:38,896 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 17:38:39,029 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 17:38:39,141 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 17:38:39,146 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 17:38:39,148 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 17:38:39,148 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 17:40:56,303 | INFO | agents.report_agent | Generating Complete Report
+2026-06-27 17:40:56,303 | INFO | agents.profiler_agent | Starting dataset profiling...
+2026-06-27 17:40:56,321 | INFO | agents.profiler_agent | Profiling Complete
+2026-06-27 17:40:56,322 | INFO | profiling.column_profiler | Profiling individual columns...
+2026-06-27 17:40:56,443 | INFO | profiling.column_profiler | 10 columns profiled
+2026-06-27 17:40:56,444 | INFO | agents.planner_agent | Generating analysis plan....
+2026-06-27 17:44:12,099 | INFO | llm.ollama_client | LLM response generated
+2026-06-27 17:44:12,099 | INFO | agents.planner_agent | Planner completed successfully
+2026-06-27 17:44:12,099 | INFO | analyzer.overview | Running Overview Analysis
+2026-06-27 17:44:12,099 | INFO | analyzer.data_quality | Running Data Quality Analysis
+2026-06-27 17:44:12,108 | INFO | analyzer.numerical | Running Numerical Analysis
+2026-06-27 17:44:12,478 | INFO | analyzer.numerical | Numerical Analysis Complete.
+2026-06-27 17:44:12,478 | INFO | analyzer.categorical | Running Categorical Analysis
+2026-06-27 17:44:12,500 | INFO | analyzer.correlation | Running Correlation Analysis
+2026-06-27 17:44:12,505 | INFO | analyzer.relationships | Running Relationship Analysis
+2026-06-27 17:44:12,510 | INFO | agents.report_agent | Report Generated Successfully
+2026-06-27 17:44:12,607 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 17:44:12,607 | WARNING | agents.visualization_agent | Unable to render chart: 'x'
+2026-06-27 17:44:12,608 | WARNING | agents.visualization_agent | Unable to render chart: 'x'

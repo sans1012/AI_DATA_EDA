@@ -24,19 +24,12 @@ log = get_logger(__name__)
 class DatasetProfile:
 
     rows: int
-
     columns: int
-
     numeric_columns: List[str]
-
     categorical_columns: List[str]
-
     datetime_columns: List[str]
-
     duplicate_rows: int
-
     missing_percentage: Dict
-
     memory_usage_mb: float
 
 

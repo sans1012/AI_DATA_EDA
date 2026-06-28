@@ -8,7 +8,7 @@ Never include markdowns
 Never include explanations outside JSON
 '''
 
-def buld_planner_prompt(dataset_profile, column_profiles):
+def build_planner_prompt(dataset_profile, column_profiles):
     profile_json  = json.dumps(dataset_profile , indent = 2, default = str)
     columns_json = json.dumps(column_profiles, indent = 2, default= str)
     prompt = f""" You are given a metafdata about the tabular dataset.

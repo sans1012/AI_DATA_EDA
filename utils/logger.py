@@ -1,13 +1,3 @@
-"""
-=========================================================
-Logger Utility
-
-Provides a centralized logger for the application.
-
-Author : Sanskriti Jain
-=========================================================
-"""
-
 import logging
 from pathlib import Path
 
